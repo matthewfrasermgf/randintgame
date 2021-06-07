@@ -12,8 +12,8 @@ for i in range(0, 5):
         randlist.append(secret)
 
 # Debug mode. Remove comment tags to enable debug
-# print('DEBUG MODE')
-# print(randlist)
+print('DEBUG MODE')
+print(randlist)
 
 points = 0
 guesses = 0
@@ -37,9 +37,9 @@ while len(randlist) > 0:
         points = points + 5
         print('You are currently at ' + str(guesses) + ' guesses and ' + str(points) + ' points!')
         if len(randlist) == 0:
-            print('The game is over. You successfully guessed all numbers in ' + str(guesses) + ' guesses.')
-            print('\nYou finished with ' + str(points) + ' points.')
-            print('The correct answers as as follows: ' + str(answers))
+            print('\nThe game is over. You successfully guessed all numbers in ' + str(guesses) + ' guesses.')
+            print('You finished with ' + str(points) + ' points.')
+            print('The correct answers are as follows: ' + str(answers))
         else:
             continue
     elif guess not in randlist:
@@ -51,12 +51,3 @@ while len(randlist) > 0:
             guessed.append(guess)
             points = points - 1
             print('You are currently at ' + str(guesses) + ' guesses and ' + str(points) + ' points!')
-
-
-
-
-
-
-
-
-        
