@@ -1,4 +1,4 @@
-# Random list game or randlistgame
+# Random list game(randlistgame)
 
 ## Description
 
